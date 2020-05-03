@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="design.WelcomeController">
+   <children>
+      <ImageView fitHeight="308.0" fitWidth="884.0" layoutX="-120.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pictures/Saved%20Pictures/images.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="70.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="187.0" layoutY="46.0" prefHeight="28.0" prefWidth="226.0" text="Wellcom To My Health" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="btncal" layoutX="144.0" layoutY="143.0" mnemonicParsing="false" onAction="#calories" prefHeight="113.0" prefWidth="156.0" text="Body Max Index" />
+            <Button fx:id="btnfatburn" layoutX="300.0" layoutY="258.0" mnemonicParsing="false" onAction="#fatburn" prefHeight="113.0" prefWidth="156.0" text="Fat Burn" />
+            <Button fx:id="btnwater" layoutX="300.0" layoutY="143.0" mnemonicParsing="false" onAction="#waterremaider" prefHeight="113.0" prefWidth="156.0" text="Water Remaider" />
+            <Button fx:id="btnmid" layoutX="144.0" layoutY="258.0" mnemonicParsing="false" onAction="#medicinealarm" prefHeight="113.0" prefWidth="156.0" text="Medicine Remaider" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnback" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" onAction="#goback" prefHeight="25.0" prefWidth="101.0" text="Back" />
+   </children>
+</AnchorPane>
